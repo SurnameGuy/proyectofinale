@@ -1,0 +1,67 @@
+* {
+  font-family: "Poppins",sans-serif !important;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.carrossel, .carrosselComeco, .carrosselFinal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+
+.carrossel {
+  flex-direction: column;
+}
+
+.carrosselFinal {
+  position: absolute;
+  transform: translateY(-200px);
+}
+
+.carrosselComeco {
+  animation: scrollingComeco 20s linear infinite;
+}
+
+.carrosselFinal {
+  animation: scrollingFinal 20s linear infinite;
+}
+
+@keyframes scrollingComeco {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-2362px);
+  }
+}
+
+@keyframes scrollingFinal {
+  0% {
+    transform: translateX(2362px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.imagemScrollavel {
+  size: auto;
+  margin-right: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.459);
+}
+
+.imagemScrollavelFim {
+  size: auto;
+  margin-right: 0px;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: white;
+}
