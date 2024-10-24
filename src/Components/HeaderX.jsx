@@ -52,7 +52,7 @@ function HeaderX() {
             value={value}
             onChange={handleChange}
             indicatorColor="primary"
-            aria-label="sticky"
+            stickyHeader aria-label="sticky tabs example"
           >
             <Tab label="Início" color="inherit" component={Link} to="/" {...a11yProps(0)} />
             <Tab label="Blog" color="inherit" component={Link} to="/blog" {...a11yProps(1)} />
