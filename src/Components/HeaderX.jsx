@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Text from './Text.jsx'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import BasicTabs from "../teste.jsx";
+import '../Styles/geral.css'
 
 const theme = createTheme({
   palette: {
@@ -41,7 +42,7 @@ function HeaderX() {
         </Box>
       </Box>
 
-      <Box sx={{ borderBottom: 0, borderColor: 'white' }}>
+      <div className='tabs'>
         <ThemeProvider theme={theme}>
           <Tabs
             centered variant="fullWidth"
@@ -52,7 +53,6 @@ function HeaderX() {
             value={value}
             onChange={handleChange}
             indicatorColor="primary"
-            aria-label="sticky"
           >
             <Tab label="Início" color="inherit" component={Link} to="/" {...a11yProps(0)} />
             <Tab label="Blog" color="inherit" component={Link} to="/blog" {...a11yProps(1)} />
@@ -60,7 +60,7 @@ function HeaderX() {
           </Tabs>
         </ThemeProvider>
 
-      </Box>
+      </div>
 
     </Box>
   );
