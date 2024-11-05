@@ -65,3 +65,30 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   background-color: white;
 }
+
+.carousel {
+  width: 98vw; /* Ajuste a largura conforme necessário */
+  height: 200px;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  animation: scroll 10s linear infinite; /* Ajuste a duração conforme necessário */
+}
+
+.carousel-item {
+  width: 100%; /* Cada item ocupa a largura total do carrossel */
+}
+
+.carousel-item img {
+  display: block;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-2130px); } /* Move o contêiner interno para a esquerda */
+}
