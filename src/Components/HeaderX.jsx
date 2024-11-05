@@ -42,7 +42,7 @@ function HeaderX() {
         </Box>
       </Box>
 
-      <div className='tabs'>
+      <Box>
         <ThemeProvider theme={theme}>
           <Tabs
             centered variant="fullWidth"
@@ -60,7 +60,7 @@ function HeaderX() {
           </Tabs>
         </ThemeProvider>
 
-      </div>
+      </Box>
 
     </Box>
   );
