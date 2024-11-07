@@ -8,5 +8,10 @@
         "title" : "Lorem ipsum",
         "image" : "",
         "content": "dolor sit amet."
+    },
+    "2" : {
+        "title": "Casarão Bela Vista",
+        "image" : "img/casarao.png",
+        "content": "Foo Bar"
     }
 }

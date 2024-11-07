@@ -1,15 +1,15 @@
 import React from 'react';
-import { Box } from '@mui/material'
-import Text from './Text.jsx'
-import './Card.css'
-import ButtonX from './ButtonX.jsx'
+import { Box } from '@mui/material';
+import Text from './Text.jsx';
+import './Card.css';
+import ButtonX from './ButtonX.jsx';
 
-function CardImgX({ children, height, width, color, bgColor, title, buttonLabel, buttonAction, img }) {
+function CardImgX({ children, height, width, color, bgColor, title, buttonLabel, img }) {
     return (
-        <Box margin="10px" maxHeight="400px" minHeight="400px" width={width} className="card" borderRadius="5px" backgroundColor={bgColor}>
+        <Box margin="10px" maxHeight="400px" minHeight="400px" width={width} className="card" borderRadius="5px" backgroundColor={bgColor} position="relative">
             <Box>
                 <Box className="cardImg">
-                    <img className="cardImg" src={img} />
+                    <img className="cardImg" src={img} alt={title} />
                 </Box>
                 <Box>
                     <Box padding="5px">
@@ -22,7 +22,7 @@ function CardImgX({ children, height, width, color, bgColor, title, buttonLabel,
                 </Box>
             </Box>
         </Box>
-    )
-};
+    );
+}
 
 export default CardImgX;
