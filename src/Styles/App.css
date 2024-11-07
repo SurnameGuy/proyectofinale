@@ -90,5 +90,5 @@
 
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-2130px); } /* Move o contêiner interno para a esquerda */
+  100% { transform: translateX(-2140px); } /* Move o contêiner interno para a esquerda */
 }

@@ -55,8 +55,9 @@ function HeaderX() {
             indicatorColor="primary"
           >
             <Tab label="Início" color="inherit" component={Link} to="/" {...a11yProps(0)} />
-            <Tab label="Blog" color="inherit" component={Link} to="/blog" {...a11yProps(1)} />
-            <Tab label="Teste" color="inherit" component={Link} to="/teste" {...a11yProps(2)} />
+            <Tab label="Artigos" color="inherit" component={Link} to="/blog" {...a11yProps(1)} />
+            <Tab label="Sobre" color="inherit" component={Link} to="/sobre" {...a11yProps(2)} />
+            <Tab label="Teste" color="inherit" component={Link} to="/teste" {...a11yProps(3)} />
           </Tabs>
         </ThemeProvider>
 
